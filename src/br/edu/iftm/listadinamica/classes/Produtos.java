@@ -4,11 +4,14 @@ public class Produtos {
     private String nome;
     private String descricao;
     private double preco;
+    private int quantidade;
     
-    public Produtos(String nome, String descricao, double preco) {
+    public Produtos(String nome, String descricao, double preco, int quantidade) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
+        this.quantidade = quantidade;
+
     }
 
     public String getNome() {
@@ -34,5 +37,19 @@ public class Produtos {
     public void setPreco(double preco) {
         this.preco = preco;
     }    
-    
+
+    /**
+     * @return int return the quantidade
+     */
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    /**
+     * @param quantidade the quantidade to set
+     */
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
 }
